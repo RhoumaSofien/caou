@@ -9,13 +9,22 @@ jQuery(document).ready(function($) {
         var testimonialNewHeight = jQuery('.home__testimonial .et_pb_blurb_content .et_pb_blurb_container .new__height').outerHeight();
         jQuery('.new__height').css('top', ((testimonialHeight - testimonialNewHeight) / 2));
 
-        //Re-orginize Résumé elements order
+        //Re-orginize petits-cadeaux elements order
         jQuery('.petits__cadeaux .et_pb_module.et_pb_blurb').each(function() {
-            var $this = jQuery(this);
-            var contentDestination = $this.find('.et_pb_main_blurb_image');
-            var contentToMove = $this.find('.et_pb_blurb_container');
+            let $this = jQuery(this);
+            let contentDestination = $this.find('.et_pb_main_blurb_image');
+            let contentToMove = $this.find('.et_pb_blurb_container');
             contentDestination.prepend(contentToMove);
-        });;
+        });
+        //Re-orginize papeterie elements order
+        jQuery('.papeterie .et_pb_module.et_pb_blurb').each(function() {
+            let $this = jQuery(this);
+            let contentDestination = $this.find('.et_pb_main_blurb_image');
+            let contentToMove = $this.find('.et_pb_blurb_container');
+            contentDestination.prepend(contentToMove);
+        });
+
+
         //Checkbox Validator
         /*
         jQuery('input#sib-email-checkbox').on("click", function() {
