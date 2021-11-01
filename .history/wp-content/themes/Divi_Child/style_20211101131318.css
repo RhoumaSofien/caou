@@ -1,0 +1,162 @@
+/*
+Theme Name: Divi Child Theme
+Theme URI: https://e-voluer.com/
+Description: Divi Child Theme
+Author: SR
+Author URI: https://e-voluer.com/
+Template: Divi
+Version: Divi 3+
+*/
+
+
+/* Global Configuration */
+
+:root {
+    --clr-light: #ededed;
+    --clr-dark: #333;
+    --clr-accent: #EFF;
+    --ff-heading: 'Roboto', sans-serif;
+    --ff-body: 'Merriweather', serif;
+    --fw-heading: 700;
+    --fw-body: 300;
+    --fs-h1: 5rem;
+    --fs-h2: 3.25rem;
+    --fs-h3: 2.75rem;
+    --fs-h4: 1.75rem;
+    --fs-body: 1.125rem;
+    --line-height: 1.55;
+    --font-color: var(--clr-light);
+    --header-color: var(--clr-accent);
+    --link-fg: var(--clr-dark);
+    --link-bg: var(--clr-light);
+    --link-fg-hover: var(--clr-dark);
+    --link-bg-hover: var(--clr-accent);
+    --transition: 250ms ease-in-out;
+    --shadow: 2px 5px 20px rgba(0, 0, 0, .2);
+    --gradient: linear-gradient(60deg, red, green, blue, yellow);
+}
+
+
+/* Global CSS */
+
+
+/*Menu Right*/
+
+.header-links {
+    list-style-type: none !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.header-links a:hover i {
+    color: #E9AF17;
+}
+
+.header-links li a:hover {
+    transform: translateY(-3px);
+}
+
+#global-header .et_pb_row {
+    display: flex;
+    align-items: center;
+}
+
+.header-links li a {
+    color: #fff!important;
+    font-size: 20px;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    transform: translateY(0px);
+    transition: 0.2s all ease-in-out;
+    padding: 0;
+}
+
+.header-links li:last-child a {
+    margin-right: 0;
+}
+
+.header-links .counter {
+    background: #E9AF17;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-radius: 50%;
+    z-index: 9;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    color: #fff!important;
+}
+
+.header-links .counter-whishlist {
+    background: #E9AF17;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-radius: 50%;
+    z-index: 9;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    color: #fff!important;
+}
+
+.header-links .fas.fa-shopping-bag,
+.header-links i.far.fa-user {
+    font-size: 0;
+    width: 32px;
+    height: 22px;
+    display: block;
+}
+
+.header-links .fa-shopping-bag:before {
+    content: url(caou/wp-content/uploads/2021/11/shopping-bag.svg)!important;
+    filter: brightness(0) invert(1);
+}
+
+.header-links .far.fa-user:before {
+    content: url(caou/wp-content/uploads/2021/11/user.svg)!important;
+    filter: brightness(0) invert(1);
+}
+
+.header-links .fa-shopping-bag:hover:before {
+    filter: none!important;
+}
+
+.header-links .far.fa-user:hover:before {
+    filter: none!important;
+}
+
+
+/* Responsive Min Width */
+
+@media (min-width: 320px) {}
+
+@media (min-width: 568px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 981px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1300px) {}
+
+
+/* Responsive Max Width */
+
+@media (max-width: 767px) {}
+
+@media (max-width: 980px) {}
