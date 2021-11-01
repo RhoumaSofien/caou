@@ -128,20 +128,11 @@ span.cadeaux__title {
     padding: 5px 10px;
     font-size: 14px;
     color: #fff;
-    display: none;
 }
 
 .cadeaux__link:hover {
     transition: var(--transition);
     background: #d6ad0a;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image:hover .cadeaux__link {
-    display: inline-block;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image:hover .et_pb_blurb_container {
-    top: 50%;
 }
 
 

@@ -136,14 +136,6 @@ span.cadeaux__title {
     background: #d6ad0a;
 }
 
-.petits__cadeaux .et_pb_main_blurb_image:hover .cadeaux__link {
-    display: inline-block;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image:hover .et_pb_blurb_container {
-    top: 50%;
-}
-
 
 /*Menu Right*/
 

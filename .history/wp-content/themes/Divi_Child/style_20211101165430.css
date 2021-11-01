@@ -25,7 +25,6 @@ Version: Divi 3+
     --ff-regular: 'caviar_dreamsregular';
     --ff-bold: 'caviar_dreamsbold';
     --ff-heading: 'zenzero_grotesk_sansregular';
-    --ff-signature: 'Sandstone';
     --ff-body: --ff-regular;
     --line-height: 1.55;
     --font-color: var(--clr-light);
@@ -59,21 +58,15 @@ h6 {
     font-family: var(--ff-bold);
 }
 
-.signature {
-    font-family: var(--ff-signature);
-}
-
 
 /* Global CSS */
 
 .home__testimonial h4 {
-    font-family: var(--ff-bold);
-    margin-bottom: 10px;
+    font-family: var(--ff-regular);
 }
 
 .new__height {
     position: relative;
-    max-width: 80%;
 }
 
 .home__testimonial .et_pb_blurb_content {
@@ -91,57 +84,6 @@ h6 {
     bottom: 0;
     margin: auto;
     z-index: -1;
-}
-
-.author__signature {
-    font-size: 33px;
-    color: #d6ad0a;
-    display: block;
-    line-height: normal;
-    margin-top: 10px;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image {
-    position: relative;
-    margin-bottom: 0!important;
-    display: block;
-}
-
-.petits__cadeaux .et_pb_blurb_container {
-    position: absolute;
-    width: calc(100% - 12px);
-    bottom: 0;
-    line-height: normal;
-    left: 6px;
-    padding: 15px;
-}
-
-span.cadeaux__title {
-    font-family: var(--ff-bold);
-    color: #fff;
-    display: block;
-}
-
-.cadeaux__link {
-    text-transform: none;
-    border: 1px solid #d6ad0a;
-    padding: 5px 10px;
-    font-size: 14px;
-    color: #fff;
-    display: none;
-}
-
-.cadeaux__link:hover {
-    transition: var(--transition);
-    background: #d6ad0a;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image:hover .cadeaux__link {
-    display: inline-block;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image:hover .et_pb_blurb_container {
-    top: 50%;
 }
 
 
