@@ -2,12 +2,41 @@ jQuery(document).ready(function($) {
     if (!jQuery('iframe.et-core-frame', window.parent.document).length) {
 
         //Homepage testimonial
-        jQuery('.home__testimonial .et_pb_main_blurb_image').insertAfter(".home__testimonial .et_pb_blurb_container");
-        //center testimonial description
-        jQuery('.home__testimonial .et_pb_blurb_content .et_pb_blurb_container>*').wrapAll('<div class="new__height" />');
-        var testimonialHeight = jQuery('.home__testimonial .et_pb_blurb_content').outerHeight();
-        var testimonialNewHeight = jQuery('.home__testimonial .et_pb_blurb_content .et_pb_blurb_container .new__height').outerHeight();
-        jQuery('.new__height').css('top', ((testimonialHeight - testimonialNewHeight) / 2));
+        jQuery('.home__testimonial .et_pb_blurb_content').each(function() {
+            let $this = jQuery(this);
+            $this.find('.et_pb_main_blurb_image').insertAfter($this.find('.et_pb_blurb_container'));
+            $this.find('.et_pb_blurb_container>*').wrapAll('<div class="new__height" />');
+            //center testimonial description
+            let testimonialHeight = $this.outerHeight();
+            let testimonialNewHeight = $this.find('.et_pb_blurb_container .new__height').outerHeight();
+            jQuery('.new__height').css('top', ((testimonialHeight - testimonialNewHeight) / 2));
+        });
+        jQuery('#testimonial .et_pb_column > .et_pb_blurb.home__testimonial').wrapAll('<div class="testimonial__carrousel owl-carousel owl-theme" />');
+
+        setInterval(function() {
+            if ((".testimonial__carrousel.owl-carousel").length) {
+                jQuery('.testimonial__carrousel.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    autoplay: true,
+                    autoplayTimeout: 10000,
+                    autoplayHoverPause: false,
+                    dots: false,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        500: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 1,
+                        }
+                    }
+                })
+            }
+        }, 1000);
 
         //Re-orginize petits-cadeaux elements order
         jQuery('.petits__cadeaux .et_pb_module.et_pb_blurb').each(function() {
@@ -30,6 +59,7 @@ jQuery(document).ready(function($) {
             let $this = jQuery(this);
             $this.find('>*:not(:first-child)').wrapAll('<div class="new_elements" />');
         });
+        jQuery('.nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:first-child>*:not(:first-child').wrapAll('<div class="new_elements" />');
 
         //Checkbox Validator
         /*
