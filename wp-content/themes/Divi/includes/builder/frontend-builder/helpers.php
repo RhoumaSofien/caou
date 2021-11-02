@@ -270,7 +270,8 @@ function et_fb_get_dynamic_backend_helpers() {
 	$is_tb_layout             = et_theme_builder_is_layout_post_type( $post_type );
 	$tb_body_layout           = et_()->array_get( $theme_builder_layouts, ET_THEME_BUILDER_BODY_LAYOUT_POST_TYPE, array() );
 	$tb_body_has_post_content = $tb_body_layout && et_theme_builder_layout_has_post_content( $tb_body_layout );
-	$has_valid_body_layout    = ! $has_tb_layouts || $is_tb_layout || $tb_body_has_post_content;
+	$is_bfb                   = ! empty( $_GET['et_fb'] ) && ! empty( $_GET['et_bfb'] ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- value is not used
+	$has_valid_body_layout    = ! $has_tb_layouts || $is_tb_layout || $tb_body_has_post_content || $is_bfb;
 
 	// If page is not singular and uses theme builder, set $post_status to 'publish'
 	// to get the 'Save' button instead of 'Draft' and 'Publish'.

@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
         //Re-orginize petits-cadeaux elements order
         jQuery('.petits__cadeaux .et_pb_module.et_pb_blurb').each(function() {
             let $this = jQuery(this);
-            let contentDestination = $this.find('.et_pb_main_blurb_image');
+            let contentDestination = $this.find('.et_pb_image_wrap');
             let contentToMove = $this.find('.et_pb_blurb_container');
             contentDestination.prepend(contentToMove);
         });
@@ -25,6 +25,11 @@ jQuery(document).ready(function($) {
             contentDestination.prepend(contentToMove);
         });
 
+        //Re-orginize articles content
+        jQuery('.nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:not(:first-child)').each(function() {
+            let $this = jQuery(this);
+            $this.find('>*:not(:first-child)').wrapAll('<div class="new_elements" />');
+        });
 
         //Checkbox Validator
         /*

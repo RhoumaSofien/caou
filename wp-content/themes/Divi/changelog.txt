@@ -1,3 +1,14 @@
+version 4.12.1 ( updated 11-01-2021 )
+- Fixes error when using layers view inside theme builder while editing a body layout.
+- Fixed issue with Library Layouts not loading when the website uses theme builder and Library Modal is accessed from Page Creation Cards.
+- Fixed error on pages that use only the Body Layout with no Header, Footer, or Post Content Module.
+- Fixed styles not clearing in the Visual Builder due to the front end CSS file being mistakenly loaded when no Theme Builder templates were used on the page.
+	* includes/builder/feature/CriticalCSS.php
+	* includes/builder/feature/DoNotCachePage.php
+	* includes/builder/frontend-builder/bundle.js
+	* includes/builder/frontend-builder/helpers.php
+	* includes/builder/module/woocommerce/Images.php
+
 version 4.12 ( updated 10-28-2021 )
 - Introduced Full Site Front-End Editing for Divi, allowing you to easily jump into your custom headers, footers and post templates while browsing your website and edit them in the Visual Builder.
 - Security Update: Fixed an incompatibility with User Role Editor plugins, specifically with the removal of the "edit page" capability. The Divi Builder attempted to check for "edit page" capability on save, but instead checked for "edit post" capability due to a bug in its post type check. As a result, if you used a Role Editor Plugin to remove the "edit page" capability from the Editor role (or another role with both "edit post" and "edit page" capabilities), but did not remove the "edit post" capability for that same role, the Editor would still be able to edit pages using a custom request.
