@@ -17,9 +17,10 @@ jQuery(document).ready(function($) {
             contentDestination.prepend(contentToMove);
         });
         //Re-orginize papeterie elements order
+
         jQuery('.papeterie .et_pb_module.et_pb_blurb').each(function() {
             let $this = jQuery(this);
-            let contentDestination = $this.find('.et_pb_main_blurb_image');
+            let contentDestination = $this.find('.et_pb_image_wrap');
             let contentToMove = $this.find('.et_pb_blurb_container');
             contentDestination.prepend(contentToMove);
         });

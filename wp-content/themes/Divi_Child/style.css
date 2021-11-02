@@ -64,87 +64,6 @@ h6 {
 }
 
 
-/* Global CSS */
-
-.home__testimonial h4 {
-    font-family: var(--ff-bold);
-    margin-bottom: 10px;
-}
-
-.new__height {
-    position: relative;
-    max-width: 80%;
-}
-
-.home__testimonial .et_pb_blurb_content {
-    position: relative;
-}
-
-.home__testimonial .et_pb_blurb_content:after {
-    content: '';
-    background: #156063;
-    width: 110%;
-    height: 80%;
-    position: absolute;
-    left: -5%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: -1;
-}
-
-.author__signature {
-    font-size: 33px;
-    color: #d6ad0a;
-    display: block;
-    line-height: normal;
-    margin-top: 10px;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image {
-    position: relative;
-    margin-bottom: 0!important;
-    display: block;
-}
-
-.petits__cadeaux .et_pb_blurb_container {
-    position: absolute;
-    width: calc(100% - 12px);
-    bottom: 0;
-    line-height: normal;
-    left: 6px;
-    padding: 15px;
-}
-
-span.cadeaux__title {
-    font-family: var(--ff-bold);
-    color: #fff;
-    display: block;
-}
-
-.cadeaux__link {
-    text-transform: none;
-    border: 1px solid #d6ad0a;
-    padding: 5px 10px;
-    font-size: 14px;
-    color: #fff;
-    display: none;
-}
-
-.cadeaux__link:hover {
-    transition: var(--transition);
-    background: #d6ad0a;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image:hover .cadeaux__link {
-    display: inline-block;
-}
-
-.petits__cadeaux .et_pb_main_blurb_image:hover .et_pb_blurb_container {
-    top: 50%;
-}
-
-
 /*Menu Right*/
 
 .header__links {
@@ -252,6 +171,149 @@ ul.header__links a:hover i {
 
 .header__links .far.fa-user:hover:before {
     filter: none!important;
+}
+
+
+/* Global CSS */
+
+.home__testimonial h4 {
+    font-family: var(--ff-bold);
+    margin-bottom: 10px;
+}
+
+.new__height {
+    position: relative;
+    max-width: 80%;
+}
+
+.home__testimonial .et_pb_blurb_content {
+    position: relative;
+}
+
+.home__testimonial .et_pb_blurb_content:after {
+    content: '';
+    background: #156063;
+    width: 110%;
+    height: 80%;
+    position: absolute;
+    left: -5%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.author__signature {
+    font-size: 33px;
+    color: #d6ad0a;
+    display: block;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.petits__cadeaux .et_pb_main_blurb_image {
+    position: relative;
+    margin-bottom: 0!important;
+    display: block;
+}
+
+.petits__cadeaux .et_pb_blurb_container {
+    position: absolute;
+    width: calc(100% - 12px);
+    bottom: 0;
+    line-height: normal;
+    left: 6px;
+    padding: 15px;
+}
+
+.cadeaux__title {
+    font-family: var(--ff-bold);
+    color: #fff;
+    display: block;
+}
+
+.cadeaux__link {
+    text-transform: none;
+    border: 1px solid #d6ad0a;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    display: none;
+}
+
+.cadeaux__link:hover {
+    transition: var(--transition);
+    background: #d6ad0a;
+}
+
+.petits__cadeaux .et_pb_main_blurb_image:hover .cadeaux__link {
+    display: inline-block;
+}
+
+.petits__cadeaux .et_pb_main_blurb_image:hover .et_pb_blurb_container {
+    top: 50%;
+}
+
+.et_pb_blurb_container {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+}
+
+.papeterie .et_pb_image_wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.papeterie__title {
+    line-height: normal;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--ff-bold);
+    margin-bottom: 10px;
+}
+
+.papeterie__link {
+    line-height: normal;
+    text-transform: none;
+    border: 1px solid #d6ad0a;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    display: none;
+}
+
+.papeterie .et_pb_main_blurb_image:hover .papeterie__link {
+    display: inline-block;
+}
+
+.papeterie .et_pb_main_blurb_image:hover .et_pb_blurb_container {
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.papeterie .et_pb_blurb_description p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.papeterie .et_pb_main_blurb_image:hover .et_pb_image_wrap>img {
+    transition: transform 8s cubic-bezier(.215, .61, .355, 1), opacity 8s cubic-bezier(.215, .61, .355, 1)!important;
+    transform: scale(1.1);
+}
+
+.papeterie .et_pb_main_blurb_image .et_pb_image_wrap>img {
+    transition: transform 8s cubic-bezier(.215, .61, .355, 1), opacity 8s cubic-bezier(.215, .61, .355, 1)!important;
+    transform: scale(1);
 }
 
 
