@@ -1,0 +1,21 @@
+{
+	"name": "pressx/custom-codes",
+    "description": "Your custom SASS, CSS, JS, PHP and HTML customizations in same directory.",
+    "require": {
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^2.3"
+    },
+	"scripts": {
+	  "post-install-cmd": [
+		"phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
+		"phpcs --config-set default_standard WordPress"
+	  ],
+	  "test": [
+		"phpcs --extensions=php --ignore=./vendor,./freemius,./node_modules ./lib"
+	  ],
+	  "fix": [
+		"phpcbf --extensions=php --ignore=./vendor,./freemius,./node_modules ./lib"
+	  ]
+	}
+}

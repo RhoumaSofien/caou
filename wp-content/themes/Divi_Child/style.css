@@ -503,6 +503,26 @@ ul.header__links a:hover i {
 }
 
 
+/*Section disponibilité*/
+
+.disponible__section .et_pb_column {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    /* gap: 1em; */
+}
+
+.disponible__section .et_pb_column>.et_pb_blurb:first-child {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.disponible__section .et_pb_column>.et_pb_blurb:not(:first-child) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+
 /* Responsive Min Width */
 
 @media (min-width: 320px) {}

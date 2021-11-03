@@ -1,0 +1,87 @@
+/**
+ * sswcmaat.admin.css
+ *
+ * @version 2.1.0
+ */
+
+#sswcmaat-sortable-list {
+	margin: 16px 0 0;
+	padding: 0;
+	list-style: none;
+	max-width: 600px;
+}
+
+.sswcmaat-tab-handle {
+	position: relative;
+	font-size: 16px;
+	line-height: 1.5;
+	background: #fff;
+	border-bottom: 1px solid rgba(0,0,0,.12);
+	padding: 8px 12px;
+	display: block;
+	cursor: move;
+	color: #777;
+}
+
+.sswcmaat-tab-handle:after {
+	content: "";
+	position: absolute;
+	right: 12px;
+	top: 19px;
+	border: 4px solid transparent;
+	border-top-color: inherit;
+}
+
+.sswcmaat-tab-handle.active-handle:after {
+	border-top-color: transparent;
+	border-bottom-color: #333;
+	top: 13px;
+}
+
+.sswcmaat-tab-handle:hover,
+.sswcmaat-tab-handle.active-handle {
+	color: #333;
+}
+
+.sswcmaat-form-label {
+	display: block;
+}
+
+.sswcmaat-form-row .description {
+	color: #757575;
+}
+
+.form-table td p.sswcmaat-form-row {
+	margin-bottom: 12px;
+}
+
+.sswcmaat-form-row input,
+.sswcmaat-form-row textarea,
+.sswcmaat-form-row select {
+	width: 100%;
+}
+
+.sswcmaat-form-row select {
+	min-height: 150px;
+}
+
+.sswcmaat-form-container {
+	margin: 0 0 16px;
+	padding: 8px 12px;
+	background: #fff;
+	display: none;
+}
+
+.sswcmaat-delete-btn {
+	color: red;
+	cursor: pointer;
+	font-size: 11px;
+	line-height: 24px;
+	font-weight: bold;
+	float: right;
+	margin-right: 24px;
+	opacity: .7;
+}
+.sswcmaat-delete-btn:hover {
+	opacity: 1;
+}
