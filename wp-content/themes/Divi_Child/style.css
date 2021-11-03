@@ -24,7 +24,7 @@ Version: Divi 3+
     --fs-body: 1.125rem;
     --ff-regular: 'caviar_dreamsregular';
     --ff-bold: 'caviar_dreamsbold';
-    --ff-heading: 'zenzero_grotesk_sansregular';
+    --ff-heading: 'Zenzero Grotesk Sans';
     --ff-signature: 'Sandstone';
     --ff-body: --ff-regular;
     --line-height: 1.55;
@@ -228,7 +228,7 @@ ul.header__links a:hover i {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -125px;
+    top: -95px;
     left: -20px;
 }
 
@@ -346,6 +346,7 @@ ul.header__links a:hover i {
     font-size: 14px;
     color: #fff;
     display: none;
+    margin-top: 10px;
 }
 
 .papeterie__link:hover {
@@ -490,6 +491,15 @@ ul.header__links a:hover i {
 .nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:first-child .new_elements {
     max-width: 80%;
     margin: auto;
+}
+
+.papeterie .et_pb_blurb_description {
+    text-align: center;
+}
+
+.footer__qualities h4 span {
+    font-family: var(--ff-bold);
+    font-size: 14px;
 }
 
 
