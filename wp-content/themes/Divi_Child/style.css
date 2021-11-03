@@ -110,18 +110,19 @@ ul.header__links a:hover i {
 
 .header__links .counter {
     background: #E9AF17;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 11px;
     border-radius: 50%;
     z-index: 9;
     position: absolute;
-    top: -6px;
-    right: -10px;
+    top: -7px;
+    right: -11px;
     color: #fff!important;
+    font-family: var(--ff-bold);
 }
 
 .header__links .counter-whishlist {
@@ -293,7 +294,7 @@ ul.header__links a:hover i {
 
 .cadeaux__link {
     text-transform: none;
-    border: 1px solid #d6ad0a;
+    border: 2px solid #d6ad0a;
     padding: 5px 10px;
     font-size: 14px;
     color: #fff;
@@ -341,7 +342,7 @@ ul.header__links a:hover i {
 .papeterie__link {
     line-height: normal;
     text-transform: none;
-    border: 1px solid #d6ad0a;
+    border: 2px solid #d6ad0a;
     padding: 5px 10px;
     font-size: 14px;
     color: #fff;
@@ -520,6 +521,23 @@ ul.header__links a:hover i {
 .disponible__section .et_pb_column>.et_pb_blurb:not(:first-child) {
     grid-row: span 1;
     grid-column: span 1;
+}
+
+.header-links1 li:first-child a span {
+    background: #E9AF17;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-radius: 50%;
+    z-index: 9;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    color: #fff!important;
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif!important;
 }
 
 
