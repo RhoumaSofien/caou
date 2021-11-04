@@ -173,7 +173,7 @@ ul.header__links a:hover i {
     content: '';
     background: #156063;
     width: 100%;
-    height: 80%;
+    height: 84%;
     position: absolute;
     left: 0%;
     top: 0;
@@ -215,7 +215,7 @@ ul.header__links a:hover i {
     content: '';
     width: 30px;
     height: 15px;
-    background: url(/caou/wp-content/uploads/2021/11/right-arrow.png)center no-repeat;
+    background: url(/caou/wp-content/uploads/2021/11/right-arrow.png)center no-repeat!important;
     background-size: contain!important;
     position: absolute;
     z-index: 99999!important
@@ -229,7 +229,7 @@ ul.header__links a:hover i {
     content: '';
     width: 30px;
     height: 15px;
-    background: url(/caou/wp-content/uploads/2021/11/right-arrow.png)center no-repeat;
+    background: url(/caou/wp-content/uploads/2021/11/right-arrow.png)center no-repeat!important;
     background-size: contain!important;
     position: absolute;
     z-index: 99999!important;
@@ -446,6 +446,27 @@ ul.header__links a:hover i {
     color: var(--clr-accent);
 }
 
+@keyframes grow {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.diapo__home .et_pb_image .et_pb_image_wrap {
+    transition-property: -moz-transform;
+    transition-duration: 5s;
+    animation-name: grow;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 
 /* Responsive Min Width */
 
@@ -485,6 +506,9 @@ ul.header__links a:hover i {
 }
 
 @media (min-width: 981px) {
+    .home__testimonial .et_pb_blurb_container {
+        vertical-align: middle;
+    }
     .home__testimonial .et_pb_main_blurb_image .et_pb_image_wrap {
         width: 392px!important;
     }
@@ -520,7 +544,8 @@ ul.header__links a:hover i {
         grid-row: span 3;
         grid-column: span 1;
         position: relative;
-        padding: 30px 40px;
+        padding: 0px 40px;
+        padding-bottom: 40px;
         max-width: 100%;
     }
     .nos__articles .et_pb_ajax_pagination_container>article.et_pb_post {
@@ -568,7 +593,7 @@ ul.header__links a:hover i {
         z-index: -1;
     }
     .nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:first-child a.entry-featured-image-url {
-        transform: translate(-40px, 10px);
+        transform: translate(-40px, 0px);
     }
     .nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:first-child .new_elements {
         max-width: 80%;
@@ -590,7 +615,7 @@ ul.header__links a:hover i {
     }
     /**/
     .testimonial__carrousel .owl-nav {
-        top: -95px;
+        top: -75px;
         left: 3px;
     }
 }
@@ -615,7 +640,7 @@ ul.header__links a:hover i {
         padding-right: 11px;
     }
     .testimonial__carrousel .owl-nav {
-        top: -95px;
+        top: -75px;
         left: 3px;
     }
     .home__testimonial .et_pb_main_blurb_image .et_pb_image_wrap {
@@ -625,7 +650,7 @@ ul.header__links a:hover i {
 
 @media (min-width: 1300px) {
     .testimonial__carrousel .owl-nav {
-        top: -95px;
+        top: -75px;
         left: 3px;
     }
     .home__testimonial .et_pb_main_blurb_image .et_pb_image_wrap {
@@ -635,7 +660,7 @@ ul.header__links a:hover i {
 
 @media (min-width: 1366px) {
     .testimonial__carrousel .owl-nav {
-        top: -95px;
+        top: -75px;
         left: 3px;
     }
     .home__testimonial .et_pb_main_blurb_image .et_pb_image_wrap {
