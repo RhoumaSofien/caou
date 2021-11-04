@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
                     loop: true,
                     margin: 10,
                     nav: true,
-                    autoplay: true,
+                    autoplay: false,
                     autoplayTimeout: 10000,
                     autoplayHoverPause: false,
                     dots: false,
@@ -60,6 +60,35 @@ jQuery(document).ready(function($) {
             $this.find('>*:not(:first-child)').wrapAll('<div class="new_elements" />');
         });
         jQuery('.nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:first-child>*:not(:first-child').wrapAll('<div class="new_elements" />');
+
+
+        //Nos Article carrousel tablet mobile 
+        jQuery('.nos__articles > .et_pb_ajax_pagination_container').addClass('owl-carousel');
+        var ElWidth = jQuery(window).width();
+        if (ElWidth < 981) {
+            if ((".nos__articles > .et_pb_ajax_pagination_container.owl-carousel").length) {
+                jQuery('.nos__articles > .et_pb_ajax_pagination_container.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: false,
+                    autoplay: false,
+                    autoplayTimeout: 10000,
+                    autoplayHoverPause: false,
+                    dots: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        500: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 2,
+                        }
+                    }
+                })
+            }
+        }
 
         //Checkbox Validator
         /*

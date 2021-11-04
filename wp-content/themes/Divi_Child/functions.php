@@ -30,6 +30,9 @@ function my_enqueue_front_scripts(){
     // Detail produit
     wp_enqueue_script('tous-les-produits-js', get_stylesheet_directory_uri().'/assets/js/layout/tous_les_produits.js', array('jquery'), '0', true);
     wp_enqueue_style( 'detailproduit', get_stylesheet_directory_uri() . '/assets/css/layout/detailproduit.css' );
+     // Menu Mobile
+     wp_enqueue_script('menu-mobile-js', get_stylesheet_directory_uri().'/assets/js/layout/menu-mobile.js', array('jquery'), '0', true);
+     wp_enqueue_style( 'menu-mobile', get_stylesheet_directory_uri() . '/assets/css/layout/menu-mobile.css' );
 }
 
 add_action('wp_enqueue_scripts', 'my_enqueue_front_scripts');
