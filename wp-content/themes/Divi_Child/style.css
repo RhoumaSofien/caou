@@ -14,7 +14,7 @@ Version: Divi 3+
 :root {
     --clr-light: #ededed;
     --clr-dark: #333;
-    --clr-accent: #EFF;
+    --clr-accent: #d6ad0a;
     --fw-heading: 700;
     --fw-body: 300;
     --fs-h1: 5rem;
@@ -28,15 +28,7 @@ Version: Divi 3+
     --ff-signature: 'Sandstone';
     --ff-body: --ff-regular;
     --line-height: 1.55;
-    --font-color: var(--clr-light);
-    --header-color: var(--clr-accent);
-    --link-fg: var(--clr-dark);
-    --link-bg: var(--clr-light);
-    --link-fg-hover: var(--clr-dark);
-    --link-bg-hover: var(--clr-accent);
     --transition: 250ms ease-in-out;
-    --shadow: 2px 5px 20px rgba(0, 0, 0, .2);
-    --gradient: linear-gradient(60deg, red, green, blue, yellow);
 }
 
 
@@ -44,6 +36,7 @@ Version: Divi 3+
 
 body {
     font-family: var(--ff-regular);
+    line-height: var(--line-height)!important;
 }
 
 h1,
@@ -53,6 +46,7 @@ h4,
 h5,
 h6 {
     font-family: var(--ff-heading);
+    line-height: var(--line-height)!important;
 }
 
 .caviar {
@@ -61,6 +55,7 @@ h6 {
 
 .zenzero {
     font-family: var(--ff-heading);
+    margin-top: 10px;
 }
 
 .bold {
@@ -85,21 +80,14 @@ ul.header__links a:hover i {
     color: #E9AF17;
 }
 
-.header__links li a:hover {
-    transform: translateY(-3px);
-}
-
 .header__links li a {
-    color: #fff!important;
-    font-size: 20px;
     margin-right: 10px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 22px;
-    height: 22px;
+    width: 23px;
+    height: 23px;
     position: relative;
-    transform: translateY(0px);
     transition: 0.2s all ease-in-out;
     padding: 0;
 }
@@ -110,76 +98,58 @@ ul.header__links a:hover i {
 
 .header__links .counter {
     background: #E9AF17;
-    width: 17px;
-    height: 17px;
+    width: 14px;
+    height: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 11px;
+    font-size: 10px;
     border-radius: 50%;
     z-index: 9;
     position: absolute;
-    top: -7px;
-    right: -11px;
+    top: 4px;
+    right: -8px;
     color: #fff!important;
     font-family: var(--ff-bold);
 }
 
-.header__links .counter-whishlist {
-    background: #E9AF17;
-    width: 15px;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 13px;
-    border-radius: 50%;
-    z-index: 9;
+.header__icons {
+    width: 23px;
+    height: 23px;
     position: absolute;
-    top: -5px;
-    right: -5px;
-    color: #fff!important;
+    z-index: -1;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: 0.7s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.header__links .fas.fa-shopping-bag,
-.header__links i.far.fa-user {
-    font-size: 0;
-    width: 32px;
-    height: 22px;
-    display: block;
-    position: relative;
+.header__links a:hover .header__icons {
+    background-position: top!important;
+    transition: 0.7s all cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.header__links .fa-shopping-bag:before {
-    content: '';
-    background: url(/caou/wp-content/uploads/2021/11/shopping-bag.svg)center no-repeat!important;
-    background-size: contain!important;
-    filter: brightness(0) invert(1);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.header__icons.wishlist__icon {
+    background-image: url(/caou/wp-content/uploads/2021/11/heart.png);
 }
 
-.header__links .far.fa-user:before {
-    content: '';
-    background: url(/caou/wp-content/uploads/2021/11/user.svg)center no-repeat!important;
-    background-size: contain!important;
-    filter: brightness(0) invert(1);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.header__icons.panier__icon {
+    background-image: url(/caou/wp-content/uploads/2021/11/shopping-bag-1.png);
 }
 
-.header__links .fa-shopping-bag:hover:before {
-    filter: none!important;
+.header__icons.compte__icon {
+    background-image: url(/caou/wp-content/uploads/2021/11/user-1.png);
 }
 
-.header__links .far.fa-user:hover:before {
-    filter: none!important;
+.header__icons.instagram__icon {
+    background-image: url(/caou/wp-content/uploads/2021/11/instagram.png);
+}
+
+.header__icons.facebook__icon {
+    background-image: url(/caou/wp-content/uploads/2021/11/facebook.png);
+}
+
+.header__icons.pinterest__icon {
+    background-image: url(/caou/wp-content/uploads/2021/11/pinterest.png);
 }
 
 
@@ -212,6 +182,24 @@ ul.header__links a:hover i {
     z-index: -1;
 }
 
+.diapo__home .et-pb-arrow-prev {
+    transform: rotate(180deg);
+}
+
+.diapo__home .et-pb-slider-arrows>a:before {
+    content: '';
+}
+
+.diapo__home .et-pb-slider-arrows>a {
+    content: '';
+    width: 52px;
+    height: 38px;
+    background: url(/caou/wp-content/uploads/2021/11/right.png)center no-repeat;
+    background-size: contain;
+    filter: invert(1);
+    margin-top: 0;
+}
+
 .owl-nav>button {
     width: 60px!important;
     height: 60px!important;
@@ -233,11 +221,11 @@ ul.header__links a:hover i {
     left: -20px;
 }
 
-.owl-nav>button span {
+.testimonial__carrousel .owl-nav>button span {
     font-size: 0;
 }
 
-.owl-nav>button.owl-next:before {
+.testimonial__carrousel .owl-nav>button.owl-next:before {
     content: '';
     width: 30px;
     height: 15px;
@@ -247,11 +235,11 @@ ul.header__links a:hover i {
     z-index: 5;
 }
 
-.owl-nav>button:hover {
+.testimonial__carrousel .owl-nav>button:hover {
     background: #d6ad0a!important;
 }
 
-.owl-nav>button.owl-prev:before {
+.testimonial__carrousel .owl-nav>button.owl-prev:before {
     content: '';
     width: 30px;
     height: 15px;
@@ -504,7 +492,7 @@ ul.header__links a:hover i {
 }
 
 
-/*Section disponibilité*/
+/*Section disponibilitÃ©*/
 
 .disponible__section .et_pb_column {
     display: grid;
@@ -540,6 +528,18 @@ ul.header__links a:hover i {
     font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif!important;
 }
 
+.diapo__home .et_pb_section {
+    background: transparent!important;
+}
+
+.diapo__home .et_pb_container {
+    max-width: 80%!important;
+}
+
+.accent__color {
+    color: var(--clr-accent);
+}
+
 
 /* Responsive Min Width */
 
@@ -553,6 +553,13 @@ ul.header__links a:hover i {
     .header__content {
         display: flex;
         align-items: center;
+    }
+    .page-id-2 header .et_section_regular {
+        background: transparent!important;
+    }
+    .page-id-2 header {
+        position: absolute;
+        width: 100%;
     }
 }
 
