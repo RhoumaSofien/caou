@@ -1,5 +1,15 @@
 jQuery(document).ready(function($) {
     if (!jQuery('iframe.et-core-frame', window.parent.document).length) {
+        //Remove Hover Text From All Images Using Code
+        $("img").mouseenter(function() {
+            let $lwp_title = $(this).attr("title");
+            $(this).attr("lwp_title", $lwp_title);
+            $(this).attr("title", "");
+        }).mouseleave(function() {
+            let $lwp_title = $(this).attr("lwp_title");
+            $(this).attr("title", $lwp_title);
+            $(this).removeAttr("lwp_title");
+        });
 
         //Homepage testimonial
         jQuery('.home__testimonial .et_pb_blurb_content').each(function() {

@@ -383,7 +383,7 @@ ul.header__links a:hover i {
     transition: var(--transition);
 }
 
-.nos__articles .post-content-inner p {
+.nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:not(:first-child) .post-content-inner p {
     line-height: 1;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -397,7 +397,7 @@ ul.header__links a:hover i {
 }
 
 
-/*Section disponibilitÃ©*/
+/*Section disponibilitÃƒÂ©*/
 
 .footer__qualities h4 span {
     font-family: var(--ff-bold);
@@ -481,7 +481,7 @@ ul.header__links a:hover i {
         background: #fff!important;
         border-radius: 0!important;
         margin: 0!important;
-        border: 1px solid #f9f9f9!important;
+        border: 1px solid #e5e5e5!important;
     }
     .header__content {
         display: flex;
@@ -598,6 +598,9 @@ ul.header__links a:hover i {
     .nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:first-child .new_elements {
         max-width: 80%;
         margin: auto;
+    }
+    .nos__articles .et_pb_ajax_pagination_container>article.et_pb_post:first-child .new_elements h2 a {
+        font-size: 35px!important;
     }
     .testimonial__carrousel .owl-nav>button {
         width: 60px!important;
