@@ -36,6 +36,14 @@
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: 'Moscato';
+    src: url('../../resources/fonts/MoscatoScript.woff2') format('woff2'), url('../../resources/fonts/MoscatoScript.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /*
 @font-face {

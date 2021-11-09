@@ -16,12 +16,6 @@ jQuery(document).ready(function($) {
             let $this = jQuery(this);
             $this.find('.et_pb_main_blurb_image').insertAfter($this.find('.et_pb_blurb_container'));
             $this.find('.et_pb_blurb_container>*').wrapAll('<div class="new__height" />');
-            /*
-            //center testimonial description
-            let testimonialHeight = $this.outerHeight();
-            let testimonialNewHeight = $this.find('.et_pb_blurb_container .new__height').outerHeight();
-            jQuery('.new__height').css('top', ((testimonialHeight - testimonialNewHeight) / 2));
-            */
         });
         jQuery('#testimonial .et_pb_column > .et_pb_blurb.home__testimonial').wrapAll('<div class="testimonial__carrousel owl-carousel owl-theme" />');
 
@@ -58,8 +52,15 @@ jQuery(document).ready(function($) {
             contentDestination.prepend(contentToMove);
         });
         //Re-orginize papeterie elements order
-
         jQuery('.papeterie .et_pb_module.et_pb_blurb').each(function() {
+            let $this = jQuery(this);
+            let contentDestination = $this.find('.et_pb_image_wrap');
+            let contentToMove = $this.find('.et_pb_blurb_container');
+            contentDestination.prepend(contentToMove);
+        });
+
+        //Re-orginize résumer elements order page sur mesure
+        jQuery('.disponible__section > div .et_pb_module.et_pb_blurb').each(function() {
             let $this = jQuery(this);
             let contentDestination = $this.find('.et_pb_image_wrap');
             let contentToMove = $this.find('.et_pb_blurb_container');

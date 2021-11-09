@@ -16,7 +16,7 @@ function my_enqueue_front_scripts(){
     // Global CHECKBOX & RADIO BUTTONS 
     wp_enqueue_style( 'mep', get_stylesheet_directory_uri() . '/assets/css/mep.css');
     // WOOCOMMERCE
-    wp_enqueue_style( 'mon-compte', get_stylesheet_directory_uri() . '/assets/css/layout/mon-compte.css');
+    //wp_enqueue_style( 'mon-compte', get_stylesheet_directory_uri() . '/assets/css/layout/mon-compte.css');
     wp_enqueue_style( 'panier', get_stylesheet_directory_uri() . '/assets/css/layout/panier.css');
     wp_enqueue_style( 'wishlist', get_stylesheet_directory_uri() . '/assets/css/layout/wishlist.css');
     wp_enqueue_style( 'boutique', get_stylesheet_directory_uri() . '/assets/css/layout/boutique.css');
