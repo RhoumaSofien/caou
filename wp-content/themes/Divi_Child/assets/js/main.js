@@ -103,6 +103,17 @@ jQuery(document).ready(function($) {
             }
         }
 
+
+        //re-orgonize blog categories
+        //setTimeout(function() {
+        jQuery('.blog_caou article .post-meta span.published > span.published').unwrap();
+        jQuery('.blog_caou article .post-meta').each(function() {
+            let span = jQuery(this).find('> span').detach();
+            jQuery(this).html('<div class="post-categories">' + jQuery(this).html() + '</div>');
+            jQuery(this).prepend(span);
+        });
+        //}, 700);
+
         //Checkbox Validator
         /*
         jQuery('input#sib-email-checkbox').on("click", function() {

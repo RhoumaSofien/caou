@@ -85,9 +85,11 @@ body:not(.et-fb-root-ancestor) input[type='checkbox']::after {
     height: 13px;
     width: 13px;
     left: 0;
-    top: 1px;
+    top: 0px;
     font-size: 10px;
-    background: var(--clr-accent);
+    background: #fff;
+    border: 1px solid #adadad;
+    font-weight: bold;
 }
 
 body.page-id-329334:not(.et-fb-root-ancestor) input[type='checkbox']::after {
@@ -96,10 +98,10 @@ body.page-id-329334:not(.et-fb-root-ancestor) input[type='checkbox']::after {
 }
 
 body:not(.et-fb-root-ancestor) input[type='checkbox']:checked::after {
-    background: var(--clr-accent);
+    background: #fff;
     content: "\2714";
-    color: #fafafa;
-    font-size: 10px;
+    color: #e9af17;
+    font-size: 13px;
     line-height: 13px;
 }
 

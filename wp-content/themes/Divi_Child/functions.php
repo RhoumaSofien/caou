@@ -289,3 +289,11 @@ $output .= '<script>
 	
 }
 add_shortcode('product_gallery_images_mobiles', 'product_gallery_images_mobile_shortcode');
+
+//get year
+
+function get_year_shortcode () {
+  $year = date_i18n('Y');
+  return $year;
+}
+add_shortcode ('year', 'get_year_shortcode');
