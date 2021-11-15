@@ -1,0 +1,337 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SS WooCommerce Myaccount Ajax Tabs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-12 13:41+0000\n"
+"PO-Revision-Date: 2021-11-12 13:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: Français\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-5.8.2\n"
+"X-Domain: sswcmaat"
+
+#: includes/sswcmaat-settings.php:214
+msgid "Add custom tabs"
+msgstr ""
+
+#: includes/class.settings-api.php:437
+msgid "Add new tab"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:215
+msgid "Add or modify new tabs"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:152
+msgid "Ajax links in tab content"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:72
+msgid "Ajax tabs feature"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:144
+msgid "Ajax timeout delay"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:221
+msgid "Auto flush rewrite rules"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:79
+msgid ""
+"Browse a custom preloader gif image for the tabbed content. If left blank, "
+"the plugin will use default image."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:170
+msgid "Choose a tab display style."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:181
+msgid "Choose a tab orientation."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:161
+msgid ""
+"Choose pages on which plugin CSS and JS shall be loaded. It can be the \"My "
+"Account\" page, or multiple pages. If left unselected, scripts will be "
+"loaded on entire site."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:86
+msgid "Content not loaded text"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Convert WooCommerce My Account tabs into ajax tabs. i.e. show tab content "
+"without page refresh."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:78
+msgid "Custom preloader image"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:48
+msgid "Custom Tabs"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:69
+#: includes/class.settings-api.php:474
+msgid "Delete"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:73
+msgid "Disable ajax tabs feature of this plugin."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:222
+msgid "Disable auto flushing of rewrite rules."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:137
+msgid "Disable caching of tab contents after ajax load"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:130
+msgid "Disable changing of tab URL in browser address bar"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:205
+msgid "Disable more link with dropdown on tabs"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:197
+msgid "Disable plugins CSS styles on tabs"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:136
+msgid "Disable tab cache"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:44
+msgid "Display"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:153
+msgid "Enable ajax internal links in tab content"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:191
+msgid "Enable round corners on tab links"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:66
+#: includes/class.settings-api.php:477
+msgid "Endpoint Slug"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:113
+msgid "Exclude links from ajax"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:104
+msgid "Extra ajax link selectors"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:34
+#, php-format
+msgid ""
+"From your account dashboard you can view your %1$srecent orders%2$s, manage "
+"your %3$sshipping and billing addresses%2$s and %4$sedit your password and "
+"account details%2$s."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:40
+msgid "General"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:28
+#, php-format
+msgid "Hello %s%s%s (not %2$s? %sSign out%s)"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:74
+#: includes/class.settings-api.php:483
+msgid "Hide this tab for"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://codecanyon.net/user/saurabhsharma"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:223
+msgid ""
+"If checked, it will be required to manually update permalink structure "
+"inside Settings > Permalinks > Save Changes. Permalink needs to be updated "
+"when new endpoints are added. If this option is un checked, permalinks will "
+"be updated automatically upon each load, which is server resource consuming."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:206
+msgid ""
+"If checked, more link dropdown will be removed. Any extra tabs will overflow "
+"on next line."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:139
+msgid ""
+"If checked, tab contents will not be cached. Each time you click on the tab "
+"link, the content will be loaded with a new ajax call."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:198
+msgid ""
+"If checked, tabs will show styles inherited from WooCommerce plugin or the "
+"current theme. Important: The more link feature depends on plugin's CSS. So "
+"disabling this will also disable more link."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:154
+msgid ""
+"If checked, the links inside dashboard tab will be ajaxified (except the "
+"signout link). If your theme overrides woocommerce/myaccount/dashboard.php "
+"file, make sure the links contain \"sswcmaat-ajax-link\" class name. e.g. <a "
+"class=\"sswcmaat-ajax-link\" href=\"xx\">"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:160
+msgid "Load plugin scripts on these pages only"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:181
+msgid "More"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:204
+msgid "More link"
+msgstr ""
+
+#: includes/class.settings-api.php:412
+msgid "No registered sidebars found."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:196
+msgid "Plugin's CSS styles"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:87
+msgid ""
+"Provide a custom text message that shall appear if content fails to load."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:96
+msgid ""
+"Provide a heading selector for page on which tabs are shown. E.g. .entry-"
+"title"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:145
+msgid "Provide ajax timeout delay in miliseconds. E.g. 30000 (for 30 seconds)"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:105
+msgid ""
+"Provide any extra link selector on which ajax loading shall be enabled. The "
+"link should be within my account tabs. E.g. .my-link"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:114
+msgid ""
+"Provide link selectors that shall be excluded from ajax feature. E.g. ."
+"woocommerce-MyAccount-navigation-link--downloads > a"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:190
+msgid "Round corners"
+msgstr ""
+
+#. Author of the plugin
+msgid "SaurabhSharma"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:75
+#: includes/class.settings-api.php:485
+msgid ""
+"Select user roles for which this tab shall be hidden. You can multi select "
+"using Ctrl + Click."
+msgstr ""
+
+#. Name of the plugin
+msgid "SS WooCommerce Myaccount Ajax Tabs"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:219
+msgid ""
+"SS WooCommerce Myaccount Ajax Tabs Plugin requires WooCommerce plugin. "
+"Kindly install and activate WooCommerce plugin."
+msgstr ""
+
+#: includes/sswcmaat-settings.php:234
+msgid "SS WooCommerce Myaccount Ajax Tabs Settings"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:67
+#: includes/class.settings-api.php:480
+msgid "Tab Content"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:169
+msgid "Tab display style"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:95
+msgid "Tab heading selector"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:65
+#: includes/class.settings-api.php:475
+msgid "Tab Name"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:180
+msgid "Tab Orientation"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:129
+msgid "Tab URL update"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:89
+msgid "The content could not be loaded."
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:71
+#: includes/class.settings-api.php:479
+msgid "The endpoint slug of tab name. E.g. my-offers"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:72
+#: includes/class.settings-api.php:482
+msgid ""
+"The tab content. It can contain HTML and shortcodes. If you wish to use php "
+"markup, create a new file inside /wp-"
+"content/your_theme/woocommerce/myaccount/slug-name.php/ and place your "
+"custom code in the file. That will override the content placed in this "
+"textarea."
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:70
+#: includes/class.settings-api.php:476
+msgid "The tab name as it appears in my account menu. E.g. My Offers"
+msgstr ""
+
+#: ss-woocommerce-myaccount-ajax-tabs.php:68
+msgctxt "Untitled tab followed by number"
+msgid "Untitled tab %num%"
+msgstr ""
+
+#: includes/sswcmaat-settings.php:122 includes/sswcmaat-settings.php:123
+msgid "Update document title after ajax load"
+msgstr ""

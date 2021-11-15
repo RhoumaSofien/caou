@@ -132,39 +132,6 @@
     margin-bottom: 0;
 }
 
-/*
-    #detail-produit #colonne2-product #editwhilist .yith-wcwl-add-button {
-        float: right;
-    }*/
-/*
-#detail-produit #colonne2-product #editwhilist .yith-wcwl-add-button a i {
-    border-radius: 50%;
-    background-color: #c84164!important;
-    padding: 7px;
-    font-size: 20px;
-    color: #ffffff;
-    margin-right: 0;
-}
-
-#detail-produit #colonne2-product #editwhilist .exists .yith-wcwl-add-button a i {
-    background-color: #4b52a3;
-}
-
-#detail-produit #colonne2-product #editwhilist .yith-wcwl-add-button a i:hover {
-    background: #28bbc2;
-}
-*/
-
-#detail-produit div#colonne2-product .yith-wcwl-add-to-wishlist .yith-wcwl-add-button>a{
-    background-color: #c84164!important;
-	background-image: url(https://benelapuce.com/wp-content/uploads/2021/10/heart-2.svg)!important;
-	top: 0px;
-}
-
-#detail-produit #colonne2-product #editwhilist .add_to_wishlist.single_add_to_wishlist span {
-    display: none;
-}
-
 #detail-produit .single_variation_wrap .quantity {
     margin: 0 !important;
     margin-top: 20px!important;
@@ -220,33 +187,6 @@
 #detail-produit form.cart .variations td.value select option:nth-child(1) {
     display: none;
 }
-
-.et-db #et-boc .et-l #detail-produit #ligne1-col2 .single_add_to_cart_button.button {
-    color: #000!important;
-    border-width: 1px!important;
-    border-left: 0!important;
-    border-right: 0!important;
-    margin-top: 0;
-    font-weight: 600;
-}
-
-.et-db #et-boc .et-l #detail-produit #ligne1-col2 .single_add_to_cart_button.button:hover {
-    border-radius: 0!important;
-    border: 1px solid transparent!important;
-    border-left: 0!important;
-    border-right: 0!important;
-    background: #26b2b8!important;
-    color: #fff!important;
-}
-
-
-/*
-     #detail-produit form.cart {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    */
 
 .single-product #detail-produit .thwepo-extra-options.thwepo_variable {
     margin-bottom: 30px;
@@ -516,10 +456,6 @@ a.rightthumb:hover span {
 
 #detail-produit #colonne2-product #ligne1-col2 {
     padding: 0 5%;
-}
-
-.single-product .clearfix .yith-wcwl-add-to-wishlist {
-    display: none!important;
 }
 
 #vous-aimerez-aussi section.related.products>.products .product {
@@ -807,7 +743,7 @@ button#myBtn {
     .prev_next_buttons {
         top: 9vh;
     }
-   /* .single-product #detail-produit .product-gallery.owl-carousel.carsouselfullproduct .owl-stage-outer {
+    /* .single-product #detail-produit .product-gallery.owl-carousel.carsouselfullproduct .owl-stage-outer {
         height: 250px;
     }*/
 }
@@ -826,27 +762,14 @@ button#myBtn {
     color: #87b099!important;
 }
 
-#detail-produit #colonne2-product #editwhilist .add_to_wishlist.single_add_to_wishlist span {
-    display: none;
-}
-
 #detail-produit a.delete_item {
     font-size: 0!important;
     line-height: 0!important;
 }
 
-
 .single-product #main-content #detail-produit #colonne2-product #editwhilist a.delete_item {
-     background-image: url(/wp-content/uploads/2021/10/like-1.svg)!important;
-	 right: auto;
-}
-
-.single-product #main-content .WishlistTogglee span {
-    display: none!important;
-}
-
-#detail-produit a.view-wishlist {
-    display: none!important;
+    background-image: url(/wp-content/uploads/2021/10/like-1.svg)!important;
+    right: auto;
 }
 
 #detail-produit span.separator {
@@ -867,15 +790,6 @@ div#editwhilist {
     margin: 0!important;
     width: auto;
     display: contents;
-}
-
-.et-db #et-boc .et-l #detail-produit .et_pb_wc_add_to_cart .quantity input.qty {
-    border: 1px solid #333!important;
-    width: 85px;
-    max-width: 100%;
-    border-radius: 10px;
-    background-color: transparent!important;
-    color: #000!important;
 }
 
 #detail-produit h2.yikes-custom-woo-tab-title {
@@ -1018,39 +932,6 @@ body.single-product .product-gallery a.view-gallery {
 
 div#detail-produit {
     background-color: transparent!important;
-}
-
-div#editwhilist a.add_to_wishlist {
-   /* background-color: transparent!important;*/
-    right: auto;
-   /* position: relative!important;*/
-}
-
-div#editwhilist .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse {
-    position: absolute!important;
-    right: 0;
-    top: 0;
-}
-
-.single-product .yith-wcwl-wishlistexistsbrowse {
-    /* display: none; */
-}
-
-.single-product div#editwhilist .yith-wcwl-wishlistexistsbrowse {
-    display: block!important;
-    position: relative!important;
-    right: 0!important;
-    top: 0;
-}
-/*
-#main-content #editwhilist .yith-wcwl-add-to-wishlist .yith-wcwl-add-button>a:hover {
-    background-color: transparent!important;
-}
-*/
-
-#detail-produit div#colonne2-product .yith-wcwl-add-to-wishlist .yith-wcwl-add-button>a:hover {
-    background-color: #c84164!important;
-    background-image: url(/wp-content/uploads/2021/10/like-1.svg)!important;
 }
 
 .autorizescoll {
@@ -1226,11 +1107,7 @@ a.rightthumb span {
 }
 
 header .et_builder_inner_content {
-    z-index 0
-}
-
-.et-db #et-boc .et-l #detail-produit .et_pb_wc_add_to_cart .quantity input.qty {
-    border: 1px solid #56c5cb!important;
+    z-index 0;
 }
 
 .single-product span.onsale {
@@ -1282,14 +1159,6 @@ header .et_builder_inner_content {
     opacity: 0;
 }
 
-.single-product .product-share .sharing-popup ul.heateor_sss_sharing_ul {
-    margin: 0!important;
-    width: 200px;
-    border-radius: 50px;
-    overflow: hidden;
-    padding: 0!important;
-}
-
 #et-boc #main-content .woocommerce-variation-add-to-cart.variations_button>div,
 #et-boc #main-content .woocommerce-variation-add-to-cart.variations_button>single_add_to_cart_button.button {
     margin: 0!important;
@@ -1322,14 +1191,10 @@ header .et_builder_inner_content {
     }
 }
 
-@media(max-width:1160px) {
-    .et-db #et-boc .et-l #detail-produit #ligne1-col2 .single_add_to_cart_button.button {
-        /* margin-top: 20px!important; */
-    }
-}
+@media(max-width:1160px) {}
 
 body.single-product #detail-produit .product-gallery img {
-        min-height: 512px;
+    min-height: 512px;
     height: 512px;
     width: 100%;
     object-fit: cover;

@@ -15,6 +15,7 @@ Version: Divi 3+
     --clr-light: #ededed;
     --clr-dark: #333;
     --clr-accent: #d6ad0a;
+    --clr-accent2: #186265;
     --fw-heading: 700;
     --fw-body: 300;
     --fs-h1: 5rem;
@@ -37,9 +38,12 @@ Version: Divi 3+
 
 /*Temp fix for Divi*/
 
+
+/*
 input[type="checkbox"] {
     border: 1px solid #e3e3e3!important;
 }
+*/
 
 
 /*Global Classes*/
@@ -47,6 +51,7 @@ input[type="checkbox"] {
 body {
     font-family: var(--ff-regular);
     line-height: var(--line-height)!important;
+    overflow-x: hidden;
 }
 
 h1,
@@ -68,6 +73,10 @@ h6 {
     margin-top: 10px;
 }
 
+.regular {
+    font-family: var(--ff-regular);
+}
+
 .bold {
     font-family: var(--ff-bold);
 }
@@ -78,6 +87,11 @@ h6 {
 
 .signature2 {
     font-family: var(--ff-signature2);
+}
+
+.stop-scroll {
+    max-height: 100vh!important;
+    overflow: hidden!important;
 }
 
 .caou__btn,
@@ -358,6 +372,23 @@ ul.header__links a:hover i {
     margin-bottom: 10px;
 }
 
+.papeterie .et_pb_main_blurb_image:hover .et_pb_blurb_container .papeterie__title {
+    font-size: 23px;
+}
+
+.papeterie .et_pb_main_blurb_image:hover span.et_pb_image_wrap {
+    position: relative;
+}
+
+.papeterie .et_pb_main_blurb_image:hover span.et_pb_image_wrap:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #0000006e;
+    position: absolute;
+    z-index: 1;
+}
+
 .papeterie__link {
     line-height: normal;
     text-transform: none;
@@ -442,7 +473,7 @@ ul.header__links a:hover i {
 }
 
 
-/*Section disponibilitÃƒÆ’Ã‚Â©*/
+/*Section disponibilitÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©*/
 
 .footer__qualities h4 span {
     font-family: var(--ff-bold);
@@ -453,7 +484,7 @@ ul.header__links a:hover i {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(3, auto);
-    /* gap: 1em; */
+    gap: 10px;
 }
 
 .disponible__section .et_pb_column>.et_pb_blurb:first-child {
@@ -515,6 +546,42 @@ ul.header__links a:hover i {
 
 /*Notre Histoire*/
 
+.histoire_quote div>p:first-child {
+    position: relative;
+    padding-top: 25px;
+}
+
+.histoire_quote div>p:first-child:before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: var(--quote);
+    background-repeat: no-repeat;
+}
+
+.right_histoire {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.right_histoire>div {
+    grid-row: 1 / 2;
+    align-self: center;
+    width: auto!important;
+    float: none!important;
+}
+
+.right_histoire>div:first-child {
+    grid-column: 1 / 5;
+}
+
+.right_histoire>div:last-child {
+    grid-column: 3 / -1;
+}
+
 .history__qualities h4 {
     font-family: var(--ff-bold);
 }
@@ -555,10 +622,11 @@ ul.header__links a:hover i {
     width: 28px;
     height: 28px;
     position: absolute;
-    left: -35px;
-    top: -6px;
+    left: -23px;
+    top: 0;
     background-image: var(--quote);
     background-repeat: no-repeat;
+    background-size: 20px;
 }
 
 
@@ -567,7 +635,7 @@ ul.header__links a:hover i {
 .disponible__section .et_pb_blurb_container {
     position: absolute;
     bottom: 0;
-    right: 5%;
+    left: 5%;
     padding: 10px;
     width: fit-content;
     height: fit-content;
@@ -1144,11 +1212,17 @@ div#faq_contact {
         top: -75px;
         left: 3px;
     }
+    .et-menu li>a {
+        font-size: 14px!important;
+    }
 }
 
 @media (min-width: 1100px) {
     .home__testimonial .et_pb_main_blurb_image .et_pb_image_wrap {
         width: 450px!important;
+    }
+    .et-menu li>a {
+        font-size: 16px!important;
     }
 }
 
@@ -1160,7 +1234,7 @@ div#faq_contact {
         transform: translateX(-20px);
     }
     .header__content .et_pb_menu .et-menu>li {
-        padding-left: 11px;
+        padding-left: 6px;
     }
     .header__content .et_pb_menu .et-menu>li:last-child {
         padding-right: 11px;
@@ -1258,9 +1332,16 @@ div#faq_contact {
     }
     .et_pb_column .et_pb_row_inner,
     .et_pb_row {
-        padding: 1% 0;
+        padding: 5% 0;
     }
     .et_pb_section {
         padding: 1% 0;
+    }
+    .caou__quote:before {
+        top: 0;
+        left: 0;
+    }
+    .caou__quote {
+        padding-top: 25px;
     }
 }

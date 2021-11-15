@@ -1,5 +1,16 @@
 jQuery(document).ready(function($) {
     if (!jQuery('iframe.et-core-frame', window.parent.document).length) {
+        //Stop scroll when open menu mobile
+        jQuery('.mobile_menu_bar').click(function() {
+            jQuery('html,body').toggleClass('stop-scroll');
+        });
+
+        //Make HomeSlider Automatic
+        var intervalId = window.setInterval(function() {
+            /// call your function here
+            jQuery('.diapo__home a.et-pb-arrow-next').click()
+        }, 7000);
+
         //Remove Hover Text From All Images Using Code
         $("img").mouseenter(function() {
             let $lwp_title = $(this).attr("title");
